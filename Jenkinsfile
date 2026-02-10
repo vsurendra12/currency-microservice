@@ -3,14 +3,14 @@ pipeline {
         label "java-node"
     }
     environment {
-        BRANCH_NAME = "prod"
+        BENNCH_NAME = "pwd"
     }
     stages {
         stage ("build") {
             when {
                 allOf {
                     branch 'pro'
-                environment name: "BRANCH_NAME", value : "prod"
+                environment name: "BENCH_NAME", value : "pwd"
                 }
             }
             steps {
