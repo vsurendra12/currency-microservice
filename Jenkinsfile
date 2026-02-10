@@ -4,14 +4,22 @@ pipeline {
     }
     environment {
         DAY = "sun"
+        CLASS = "first"
     }
     stages {
-        stage ("buils") {
+        stage ("build") {
             when {
                 environment name: "DAY", value:"sun"
             }
             steps{
-                echo "print this is sun if no sunday then don't"
+                echo "print if this is sun "
+            }
+        }
+        stage ("scan") {
+            steps {
+                echo "testing"
+                echo "i am in ${CLASS}"
+                echo "this is ${DAY}"
             }
         }
     }
