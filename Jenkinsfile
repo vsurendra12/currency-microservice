@@ -2,18 +2,16 @@ pipeline {
     agent {
         label "java-node"
     }
-
-    environment  {
-        TODAY_DAY = "mondy"
+    environment {
+        DAY = "sun"
     }
     stages {
-        stage ("build") {
-
+        stage ("buils") {
             when {
-                environment name: 'TODAY_DAY' , value : 'monday'
+                environment name: "DAY", value:"sun"
             }
-            steps {
-             echo "excute for nothing"   
+            steps{
+                echo "print"
             }
         }
     }
