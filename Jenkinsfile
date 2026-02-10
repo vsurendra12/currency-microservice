@@ -3,7 +3,7 @@ pipeline {
         label "java-node"
     }
     environment {
-        name =  "Surendra"
+        name =  "Suresh"
         course = "Welcome to devops course"
     }
     stages {
