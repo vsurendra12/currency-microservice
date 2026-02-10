@@ -9,7 +9,7 @@ pipeline {
     environment {
         name =  "Surendra"
         course = "Welcome to devops course"
-        my_cred = credentials ("surendra_text")
+        my_cred = credentials("surendra_text")
     }
     stages {
         stage ("first-satge") {
