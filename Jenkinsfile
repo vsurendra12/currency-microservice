@@ -3,15 +3,15 @@ pipeline {
         label "java-node"
     }
     environment {
-        MONTH_NAME = "AUG"
+        BRANCH_NAME = "prod"
     }
     stages {
         stage ("build") {
             when {
-                expression { BRANCH_NAME ==~ /(prod|hotfix)/ }
+                environment name: "BRANCH_NAME" value : "prod"
             }
             steps {
-                echo "print"
+                echo "just print"
             }
         }
     }
