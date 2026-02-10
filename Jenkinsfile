@@ -28,7 +28,7 @@ pipeline {
             echo "you are certified in ${cloud}"
             }
         }
-        stage ("first-satge") {
+        stage ("third-satge") {
             environment {
                 name = "sam"
                 cloud = "docker"
