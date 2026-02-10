@@ -3,7 +3,7 @@ pipeline {
         label "java-node"
     }
     environment {
-        DAY = "sun"
+        DAY = "mon"
     }
     stages {
         stage ("buils") {
@@ -11,7 +11,7 @@ pipeline {
                 environment name: "DAY", value:"sun"
             }
             steps{
-                echo "print"
+                echo "print this is sun if no sunday then don't"
             }
         }
     }
