@@ -3,7 +3,7 @@ pipeline {
         label "java-node"
     }
     environment {
-        BENNCH_NAME = "pwd"
+        BENCH_NAME = "pwd"
     }
     stages {
         stage ("build") {
