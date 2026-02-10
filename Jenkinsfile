@@ -8,8 +8,10 @@ pipeline {
     }
     stages {
         stage ("first-satge") {
+            steps{
             echo "hello ${name}"
             echo "thanks and ${course}"
+            }
         }
     }
 }
