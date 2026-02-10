@@ -2,12 +2,14 @@ pipeline {
     agent {
         label "java-node"
     }
-
+    environment {
+        name =  "Surendra"
+        course = "Welcome to devops course"
+    }
     stages {
-        stage ("bulild") {
-            steps {
-                echo "pipeline for timeout"
-            }
+        stage ("first-satge") {
+            echo "hello ${name}"
+            echo "thanks and ${course}"
         }
     }
 }
