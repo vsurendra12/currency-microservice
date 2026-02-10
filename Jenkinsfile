@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage ("build") {
             when {
-                expression { BRANCH_NAME ==~ /(prod|stage)/ }
+                expression { BRANCH_NAME ==~ /(prod|main)/ }
             }
             steps {
                 echo "print"
