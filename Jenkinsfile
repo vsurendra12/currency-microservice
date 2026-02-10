@@ -5,6 +5,7 @@ pipeline {
     environment {
         name =  "Surendra"
         course = "Welcome to devops course"
+        my_cred = credintials ("surendra_text")
     }
     stages {
         stage ("first-satge") {
@@ -15,6 +16,7 @@ pipeline {
             echo "hello ${name}"
             echo "thanks and ${course}"
             echo "you are certified in ${cloud}"
+            echo "print my cred ${my_cred}"
             }
         }
         stage ("second-satge") {
