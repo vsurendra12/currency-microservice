@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment  {
-        TODAY_DAY = "monday"
+        TODAY_DAY = "mondy"
     }
     stages {
         stage ("build") {
