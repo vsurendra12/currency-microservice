@@ -9,7 +9,7 @@ pipeline {
         stage ("build") {
             when {
                 allOf {
-                    branch 'pro'
+                    branch 'main'
                 environment name: "BENCH_NAME", value : "pwd"
                 }
             }
