@@ -3,7 +3,7 @@ pipeline {
         label "java-node"
     }
     environment {
-        DAY = "mon"
+        DAY = "sun"
     }
     stages {
         stage ("buils") {
